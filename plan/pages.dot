@@ -1,0 +1,38 @@
+digraph G {
+  shape=box;
+
+  Front;
+  Restaurants;
+  MenuItem;
+  Restaurant;
+  RestaurantMenu;
+
+  Front->Login;
+  Front->UserAccount;
+
+  Restaurant->RestaurantMenu;
+
+
+  Front->RestaurantMenu;
+  Front->Restaurants;
+  Front->Restaurant;
+  Front->MenuItem;
+
+  Restaurant->MenuItemAdd;
+  MenuItem->MenuItemEdit;
+  MenuItem->MenuItemDelete;
+
+  RestaurantMenu->MenuItem;
+  RestaurantMenu->MenuItemAdd
+  RestaurantMenu->MenuItemEdit;
+  RestaurantMenu->MenuItemDelete;
+
+  Restaurants->Restaurant;
+  Restaurants->RestaurantAdd
+  Restaurants->RestaurantEdit;
+  Restaurants->RestaurantDelete;
+
+  Restaurant->RestaurantEdit;
+  Restaurant->RestaurantDelete;
+
+  }
