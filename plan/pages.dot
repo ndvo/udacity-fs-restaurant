@@ -5,20 +5,18 @@ digraph G {
   Restaurants;
   MenuItem;
   Restaurant;
-  RestaurantMenu;
 
   Front->Login;
   Front->UserAccount;
 
-  Restaurant->RestaurantMenu;
 
 
-  Front->RestaurantMenu;
   Front->Restaurants;
   Front->Restaurant;
   Front->MenuItem;
 
   Restaurant->MenuItemAdd;
+  Restaurant->MenuItem;
   MenuItem->MenuItemEdit;
   MenuItem->MenuItemDelete;
 
