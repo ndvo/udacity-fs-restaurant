@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <header>
+            <img id="logo">
+            <h1 id="page-title">Restaurants</h1>
+        </header>
+        <section id="breadcrumb">
+        </section>
+        <main>
+            <section class="filter">
+            </section>
+            <section class="restaurants">
+                {% for r in restaurants %}
+                <article class="restaurant list-item">
+                    <figure></figure>
+                    <h1>{{ r.name }}</h1>
+                    <div class="tags">
+                        <a href="#">Tag</a>
+                        <a href="#">Tag</a>
+                        <a href="#">Tag</a>
+                    </div>
+                    <p>{{ r.description }}</p>
+                    <figure class="chart">
+                    </figure>
+                    <div class="map">
+                    </div>
+                </article>
+                {% endfor %}
+            </section>
+            <section class="restaurants map">
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html
